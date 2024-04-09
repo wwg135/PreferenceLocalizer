@@ -1,7 +1,7 @@
-TARGET := iphone:clang:latest:14.0
+TARGET := iphone:clang:latest:15.0
 INSTALL_TARGET_PROCESSES = SpringBoard Preferences
 ARCHS = arm64 arm64e
-SYSROOT = $(THEOS)/sdks/iPhoneOS14.2.sdk
+SYSROOT = $(THEOS)/sdks/iPhoneOS16.5.sdk
 DEBUG = 1
 FINALPACKAGE = 0
 
