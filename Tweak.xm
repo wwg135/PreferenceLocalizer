@@ -72,9 +72,9 @@ NSArray *languageList() {
 			[languages addObject:languageAction];
 		}
 		
-		UIMenu *languageList = [UIMenu menuWithTitle:@"Set Language" image:[UIImage systemImageNamed:@"globe"] identifier:nil options:0 children:languages];
+		UIMenu *languageList = [UIMenu menuWithTitle:@"设置语言" image:[UIImage systemImageNamed:@"globe"] identifier:nil options:0 children:languages];
 
-		UIAction *resetAction = [UIAction actionWithTitle:@"Reset" image:[UIImage systemImageNamed:@"arrow.clockwise.circle.fill"] identifier:nil handler:^(__kindof UIAction *_Nonnull action) {
+		UIAction *resetAction = [UIAction actionWithTitle:@"重置" image:[UIImage systemImageNamed:@"arrow.clockwise.circle.fill"] identifier:nil handler:^(__kindof UIAction *_Nonnull action) {
 			setApplicationLanguage(nil);
         }];
 		resetAction.attributes = UIMenuElementAttributesDestructive;
